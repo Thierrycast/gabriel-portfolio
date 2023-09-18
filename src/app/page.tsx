@@ -1,7 +1,11 @@
+"use client"
+
 import styles from './page.module.css'
+
+import Header from '@/components/Header'
 
 export default function Home() {
   return (
-    <h1>hello word!</h1>
+    <Header/>
   )
 }

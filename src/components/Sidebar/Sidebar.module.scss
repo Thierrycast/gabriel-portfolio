@@ -3,7 +3,7 @@
 .mobileMenu {
   position: fixed;
   top: 0;
-  right: -800px; 
+  right: -80rem; 
   width: 100vw;
   height: 100%;
   background-color: #0B2447;
@@ -12,18 +12,18 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 200px 0;
+  padding: 20rem 0;
   
 
   div{
     align-items: center;
     display: flex;
     flex-direction: column;
-    gap: 40px;
+    gap: 4rem;
   
 
     color: #fff;
-    font-size: 30px;
+    font-size: 3rem;
     font-weight: 600;
   }
 }

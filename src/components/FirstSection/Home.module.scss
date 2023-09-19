@@ -1,0 +1,45 @@
+.home_container{
+    width: 100vw;
+   
+    background: #494949;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    padding: 100px 0 140px;
+
+    div{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+      
+
+
+        igm{
+            
+        }
+
+        p{
+            color: #e2e2e2;
+            
+            font-size: 18px;
+            font-weight: 200;
+            width: 350px;
+            text-align: center;
+            margin-top: 20px;
+            margin-bottom: 60px;
+        }
+
+        button{
+            background-color: #0B2447;
+            border: none;
+            border-radius: 10px;
+            box-shadow: 0px 4px 4px #00000040;
+            padding: 12px 36px;
+
+            color: #fff;
+           
+            font-size: 16px;
+            font-weight: 400;
+        }
+    }
+}

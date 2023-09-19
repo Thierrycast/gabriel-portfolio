@@ -12,10 +12,6 @@ export default function Sidebar(props : SidebarProps) {
 
     const {isOpen, setIsOpen} = props
 
-    const toggleMenu = () => {
-        setIsOpen(!isOpen);
-      };
-
 
     return(
         <div className={isOpen ? `${styles.mobileMenu} ${styles.open}` : styles.mobileMenu}>

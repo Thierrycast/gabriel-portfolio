@@ -5,6 +5,7 @@ import styles from './page.module.css'
 import Header from '@/components/Header'
 import FirstSection from '@/components/FirstSection'
 import About from '@/components/About'
+import JobsSection from "@/components/JobsSection";
 
 export default function Home() {
   return (
@@ -12,6 +13,7 @@ export default function Home() {
         <Header/>
         <FirstSection/>
         <About/>
+        <JobsSection/>
       </>
     
   )

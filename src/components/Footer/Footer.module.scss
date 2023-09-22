@@ -1,0 +1,38 @@
+.container_footer{
+    display: flex;
+    padding: 4rem;
+
+
+    background-color: #3F3F3F;
+   
+    div{
+        width: 50%; 
+        height: 15rem;
+        display: flex;
+         align-items: center;
+         justify-content: center;
+    }
+}
+
+.left_div_footer{
+    img{
+        width: 28.5rem;
+    }
+
+    border-right: 1px solid #fff;
+}
+
+.right_div_footer{
+
+    div{
+        display: flex;
+        flex-direction: column;
+        align-items: normal;
+        gap: 1rem;
+
+        color: #ffffff;
+
+        font-size: 1.6rem;
+        font-weight: 600;
+    }
+}

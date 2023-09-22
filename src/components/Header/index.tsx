@@ -3,21 +3,24 @@ import styles from './Header.module.scss'
 import ButtonMenu from './buttonMenu/index'
 import Sidebar from  '../Sidebar'
 import { useState } from 'react';
+import {useMediaQuery} from 'react-responsive'
 
 
 
 
 export default function Header() {
   const [isOpen, setIsOpen] = useState<boolean>(false)
-  console.log(isOpen);
+  const isSmallScreen = useMediaQuery({ maxWidth: 800 });
   
-
-  const showSidebar = () => setIsOpen(!isOpen)
-
-
     return(
         <header className={styles.header} >
-            <img src="/svgs/logo1.svg" alt="logo" />
+            {
+                !isSmallScreen ? (
+                    <img src="/svgs/logo1.svg" alt="logo" />
+                ):(
+                    <img src="/svgs/logomobile.svg" alt="logo" />
+                )
+            }
 
             <ul>
                 <li><a href="/">Início</a></li>

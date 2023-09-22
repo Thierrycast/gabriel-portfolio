@@ -1,0 +1,33 @@
+.contactsSection_Container{
+    width: 100%;
+
+
+    background-color: #B4B4B4;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 9rem;
+
+    h1{
+        color: #0b2447;
+        font-size: 2.8rem;
+        font-weight: 700;
+        margin-bottom: 1.5rem;
+    }
+
+    p{
+        font-size: 2.2rem;
+        font-weight: 400;
+    margin-bottom: 10rem;
+    }
+ 
+    div{
+        display: flex;
+        gap: 6rem;
+
+        img{
+            width: 7.5rem;
+        }
+    }
+}

@@ -6,6 +6,7 @@ import Header from '@/components/Header'
 import FirstSection from '@/components/FirstSection'
 import About from '@/components/About'
 import JobsSection from "@/components/JobsSection";
+import ContactsSection from '@/components/ContactsSection'
 
 export default function Home() {
   return (
@@ -14,6 +15,7 @@ export default function Home() {
         <FirstSection/>
         <About/>
         <JobsSection/>
+        <ContactsSection/>
       </>
     
   )

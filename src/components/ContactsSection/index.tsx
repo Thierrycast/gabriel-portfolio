@@ -13,6 +13,7 @@ export default function ContactsSection() {
                 <img src="/svgs/logowhatsapp.svg" alt="" />
                 <img src="/svgs/logotelegram.svg" alt="" />
             </div>
+            <span><img src="/svgs/iconphone.svg" alt="" /> (33) 998833-1008</span>
         </div>
     )
 }

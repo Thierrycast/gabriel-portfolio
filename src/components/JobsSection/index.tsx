@@ -1,62 +1,8 @@
 import { useMediaQuery } from 'react-responsive';
 import style from './JobsSection.module.scss'
-import Image, { StaticImageData } from 'next/image';
+import Image from 'next/image';
 
-import PhotoWd1 from '@/assets/jobsimages/wd1.jpeg'
-import PhotoWd2 from '@/assets/jobsimages/wd2.jpeg'
-import PhotoWd3 from '@/assets/jobsimages/wd3.jpeg'
-
-
-interface Job {
-    id: number;
-    title: React.ReactNode;
-    images: StaticImageData[];
-  }
-
-const jobs: Job[] = [
-        {
-            id: 1,
-            title:(
-                <>
-                    Ensaio fotográfico para <span>WD mecânica</span>
-                </>
-            ),
-
-            images: [
-                PhotoWd1,
-                PhotoWd2,
-                PhotoWd3,
-            ]
-        },
-        // {
-        //     id: 2,
-        //     title:(
-        //         <>
-        //             Ensaio fotográfico na <span>fazenda Macedônia</span> Ipaba
-        //         </>
-        //     ),
-
-        //     images: [
-        //         `/jobsimages/wd1.jpeg`,
-        //         `/jobsimages/wd2.jpeg`,
-        //         `/jobsimages/wd3.jpeg`,
-        //     ]
-        // },
-        // {
-        //     id: 3,
-        //     title:(
-        //         <>
-        //             Ensaio fotográfico para <span>WD mecânica</span>
-        //         </>
-        //     ),
-
-        //     images: [
-        //         `/jobsimages/wd1.jpeg`,
-        //         `/jobsimages/wd2.jpeg`,
-        //         `/jobsimages/wd3.jpeg`,
-        //     ]
-        // },
-    ]
+import jobs from '@/data/jobsData'
 
 
 export default function JobsSection() {

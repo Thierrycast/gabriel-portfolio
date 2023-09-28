@@ -1,5 +1,12 @@
 import style from './ContactsSection.module.scss'
 
+import Image from 'next/image'
+import LogoInstagram from '@/assets/svgs/logoinstagram.svg'
+import LogoWhatsapp from '@/assets/svgs/logowhatsapp.svg'
+import LogoTelegram from '@/assets/svgs/logotelegram.svg'
+
+import IconPhone from '@/assets/svgs/iconphone.svg'
+
 export default function ContactsSection() {
 
     return(
@@ -9,11 +16,11 @@ export default function ContactsSection() {
             <p>Entre em contato em uma das minhas redes sociais abaixo.</p>
 
             <div>
-                <img src="/svgs/logoinstagram.svg" alt="" />
-                <img src="/svgs/logowhatsapp.svg" alt="" />
-                <img src="/svgs/logotelegram.svg" alt="" />
+                <Image src={LogoInstagram} alt="Logo Instagram" />
+                <Image src={LogoWhatsapp} alt="Logo Whatsapp" />
+                <Image src={LogoTelegram} alt="Logo Telegram" />
             </div>
-            <span><img src="/svgs/iconphone.svg" alt="" /> (33) 998833-1008</span>
+            <span><Image src={IconPhone} alt="" /> (33) 998833-1008</span>
         </div>
     )
 }

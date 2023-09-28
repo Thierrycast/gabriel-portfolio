@@ -56,3 +56,17 @@
         background-color: #e1be22;
     }
 }
+
+@media (max-width: 800px) {
+
+    .Jobs_container{
+
+        padding: 8rem 6rem;
+
+        h1{
+            font-size: 2.4rem;
+            margin-bottom: 4rem;
+        }
+    }
+
+}

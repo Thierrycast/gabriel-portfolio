@@ -1,11 +1,14 @@
 import style from './Footer.module.scss'
 
+import Image from 'next/image'
+import Logo1 from '@/assets/svgs/logo1.svg'
+
 export default function Footer() {
 
     return(
         <footer className={style.container_footer} >
            <div className={style.left_div_footer}>
-                <img src="/svgs/logo1.svg" alt="" />
+                <Image src={Logo1} alt="" />
             </div> 
             <div className={style.right_div_footer}>
                 <div>

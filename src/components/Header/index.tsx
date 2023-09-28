@@ -6,6 +6,9 @@ import { useState } from 'react';
 import {useMediaQuery} from 'react-responsive'
 
 
+import Image from 'next/image';
+import Logo1 from '@/assets/svgs/logo1.svg'
+import LogoMobile from '@/assets/svgs/logomobile.svg' 
 
 
 export default function Header() {
@@ -16,9 +19,9 @@ export default function Header() {
         <header className={styles.header} >
             {
                 !isSmallScreen ? (
-                    <img src="/svgs/logo1.svg" alt="logo" />
+                    <Image src={Logo1} alt="logo" />
                 ):(
-                    <img src="/svgs/logomobile.svg" alt="logo" />
+                    <Image src={LogoMobile} alt="logo" />
                 )
             }
 

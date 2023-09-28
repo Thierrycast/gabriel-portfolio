@@ -1,11 +1,14 @@
 import style from './About.module.scss'
+import Image from 'next/image'
+
+import ProfilePic from '@/assets/images/profile.jpeg'
 
 export default function About() { 
 
     return(
         <div className={style.about_container}>
            <div className={style.about_wrap}>
-            <img src="/images/profile.jpeg" alt="foto de perfil" />
+            <Image src={ProfilePic} alt="foto de perfil" />
             <div>
                 <div>
                 <h1>Gabriel Henrique</h1>

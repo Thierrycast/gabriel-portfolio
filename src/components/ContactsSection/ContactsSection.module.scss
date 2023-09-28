@@ -38,9 +38,36 @@
         display: flex;
         align-items: center;
         gap: 0.5rem;
+    }
+}
 
-        img{
+@media (max-width: 800px) {
 
+    .contactsSection_Container{
+        padding: 9rem 3rem;
+        text-align: center;
+
+        h1{
+            font-size: 2rem;
+            margin-bottom: 2rem;
+        }
+
+        p{
+            font-size: 1.4rem;
+            margin-bottom: 6rem;
+        }
+
+        div{
+            gap: 3rem;
+            margin-bottom: 3rem;
+    
+            img{
+                width: 5rem;
+            }
+        }
+
+        span{
+            font-size: 1.4rem;
         }
     }
 }

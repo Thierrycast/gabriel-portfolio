@@ -14,6 +14,19 @@ import LogoMobile from '@/assets/svgs/logomobile.svg'
 export default function Header() {
   const [isOpen, setIsOpen] = useState<boolean>(false)
   const isSmallScreen = useMediaQuery({ maxWidth: 800 });
+
+
+  const scrollToSection = (sectionId : string) => {
+    const section = document.getElementById(sectionId);
+    if (section) {
+      const headerHeight = 90; 
+      const yOffset = section.getBoundingClientRect().top - headerHeight;
+
+      window.scrollBy({
+        top: yOffset,
+      });
+    }
+  };
   
     return(
         <header className={styles.header} >
@@ -25,11 +38,11 @@ export default function Header() {
                 )
             }
 
-            <ul>
-                <li><a href="/">Início</a></li>
-                <li><a href="/sobre">Sobre</a></li>
-                <li><a href="/trabalhos">Trabalhos</a></li>
-                <li><a href="/contatos">Contatos</a></li>
+            <ul className={styles.menuDesktop}>
+                <li><a onClick={()=> scrollToSection('home')}>Início</a></li>
+                <li><a onClick={()=> scrollToSection('about')}>Sobre</a></li>
+                <li><a onClick={()=> scrollToSection('jobs')}>Trabalhos</a></li>
+                <li><a onClick={()=> scrollToSection('contacts')}>Contatos</a></li>
             </ul>
 
            <div className={styles.menuMobile} >

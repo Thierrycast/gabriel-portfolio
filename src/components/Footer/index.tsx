@@ -12,9 +12,9 @@ export default function Footer() {
             </div> 
             <div className={style.right_div_footer}>
                 <div>
-                    <p>(33) 998833-1008</p>
-                    <p>exemplo@email.com</p>
-                    <p>Sardoá -  MG</p>
+                    <a href="mailto:gabrielhenriquesouza1231@outlook.com"><p>gabrielhenriquesouza1231@outlook.com</p></a>
+                    <a href="tel:+55339988331008"><p>(33) 998833-1008</p></a>
+                    <p>Sardoá - MG</p>
                 </div>
             </div>
         </footer>

@@ -10,7 +10,7 @@ export default function JobsSection() {
     const isSmallScreen = useMediaQuery({ maxWidth: 800 });
 
     return(
-        <div className={style.Jobs_container} >
+        <div id='jobs' className={style.Jobs_container} >
             <h1>TRABALHOS</h1>
 
             {

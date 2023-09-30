@@ -42,7 +42,11 @@
             }
         }
 
-        button{
+        a{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            
             height: 5rem;
             width: 20rem;
             background-color: #e1be22;
@@ -95,7 +99,7 @@
                 }
             }
 
-            button{
+            a{
                 width: 17rem;
                 height: 4rem;
             }

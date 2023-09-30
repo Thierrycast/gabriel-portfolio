@@ -15,7 +15,7 @@ export default function ButtonMenu(props : SidebarProps) {
 
     return(
        <>
-            <input id="menu-hamburguer" type="checkbox" />
+            <input id="menu-hamburguer" type="checkbox" checked={isOpen}/>
 
             <label onClick={showSidebar} htmlFor="menu-hamburguer">
                 <div className="menu">

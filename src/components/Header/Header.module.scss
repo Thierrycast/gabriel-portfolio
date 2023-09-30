@@ -18,21 +18,23 @@
       width: 20rem;  
     }
 
-    ul{
-        display: flex;
-        gap: 5rem;
-        font-size: 1.6rem;
-        font-weight: 700;
-        list-style: none;
+}
 
-        li{
+.menuDesktop{
+
+    display: flex;
+    gap: 5rem;
+    font-size: 1.6rem;
+    font-weight: 700;
+    list-style: none;
+
+    li{
+        transition: 0.5s;
+        color: #fff;
+
+        :hover{
             transition: 0.5s;
-            color: #fff;
-
-            :hover{
-                transition: 0.5s;
-                color: #E1BF23;
-            }
+            color: #E1BF23;
         }
     }
 }
@@ -50,10 +52,10 @@
         img{
             width: 7rem;  
           }
+    }
 
-        ul{
-            display: none;
-        }
+    .menuDesktop{
+        display: none;
     }
 
     .menuMobile{

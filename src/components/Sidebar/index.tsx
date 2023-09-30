@@ -1,5 +1,4 @@
 import { Dispatch, SetStateAction } from "react"
-import { FaTimes } from 'react-icons/fa'
 import styles from './Sidebar.module.scss'
 
 
@@ -12,17 +11,33 @@ export default function Sidebar(props : SidebarProps) {
 
     const {isOpen, setIsOpen} = props
 
+    const scrollToSection = (sectionId : string) => {
+      const section = document.getElementById(sectionId);
+      if (section) {
+      
+        setIsOpen(false);
+        
+        setTimeout(() => {
+
+          const headerHeight = 90; 
+          const yOffset = section.getBoundingClientRect().top - headerHeight;
+    
+          window.scrollBy({top: yOffset});
+        }, 500); 
+      }
+    };
+
 
     return(
         <div className={isOpen ? `${styles.mobileMenu} ${styles.open}` : styles.mobileMenu}>
-          <div>
-          
-                <a href="/">Início</a>
-                <a href="/sobre">Sobre</a>
-                <a href="/trabalhos">Trabalhos</a>
-                <a href="/contatos">Contatos</a>
+     
+          <ul>
+                <li><a onClick={()=> scrollToSection('home')}>Início</a></li>
+                <li><a onClick={()=> scrollToSection('about')}>Sobre</a></li>
+                <li><a onClick={()=> scrollToSection('jobs')}>Trabalhos</a></li>
+                <li><a onClick={()=> scrollToSection('contacts')}>Contatos</a></li>
+            </ul>
                
-          </div>
         </div>
   );
     

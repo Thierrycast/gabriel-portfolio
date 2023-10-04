@@ -1,13 +1,23 @@
-import { useMediaQuery } from 'react-responsive';
+
 import style from './JobsSection.module.scss'
 import Image from 'next/image';
 
 import jobs from '@/data/jobsData'
+import { useEffect, useState } from 'react';
 
 
 export default function JobsSection() {
 
-    const isSmallScreen = useMediaQuery({ maxWidth: 800 });
+    const [isScreenSmall, setIsScreenSmall] = useState(false);
+
+    useEffect(() => {
+      const mediaQuery = window.matchMedia('(max-width: 767px)');
+      setIsScreenSmall(mediaQuery.matches);
+      
+    }, []);
+      
+      
+      
 
     return(
         <div id='jobs' className={style.Jobs_container} >
@@ -19,16 +29,16 @@ export default function JobsSection() {
                         <div key={job.id} className={style.Job_item}>
                             
                             {
-                                !isSmallScreen ? (
+                                !isScreenSmall ? (
                                 <div>
-                                    <Image src={job.images[0]} alt='' />
-                                    <Image src={job.images[1]} alt='' />
-                                    <Image src={job.images[2]} alt='' />
+                                    <Image src={job.images[0]} alt='' priority />
+                                    <Image src={job.images[1]} alt='' priority />
+                                    <Image src={job.images[2]} alt='' priority />
 
                                 </div>
                                 ):(
                                     <div>
-                                        <Image src={job.images[1]} alt='' />
+                                        <Image src={job.images[1]} alt='' priority />
                                     </div>
                                 )
                             }

@@ -2,8 +2,7 @@
 import styles from './Header.module.scss'
 import ButtonMenu from './buttonMenu/index'
 import Sidebar from  '../Sidebar'
-import { useState } from 'react';
-import {useMediaQuery} from 'react-responsive'
+import { useEffect, useState } from 'react';
 
 
 import Image from 'next/image';
@@ -13,7 +12,15 @@ import LogoMobile from '@/assets/svgs/logomobile.svg'
 
 export default function Header() {
   const [isOpen, setIsOpen] = useState<boolean>(false)
-  const isSmallScreen = useMediaQuery({ maxWidth: 800 });
+  const [isScreenSmall, setIsScreenSmall] = useState<boolean>(true)
+
+  useEffect(() => {
+    const mediaQuery = window.matchMedia('(max-width: 767px)');
+    setIsScreenSmall(mediaQuery.matches);
+    
+    
+    
+  }, []);
 
 
   const scrollToSection = (sectionId : string) => {
@@ -31,10 +38,10 @@ export default function Header() {
     return(
         <header className={styles.header} >
             {
-                !isSmallScreen ? (
-                    <Image src={Logo1} alt="logo" />
+                !isScreenSmall ? (
+                    <Image src={Logo1} alt="logo"/>
                 ):(
-                    <Image src={LogoMobile} alt="logo" />
+                    <Image src={LogoMobile} alt="logo" priority/>
                 )
             }
 

@@ -19,8 +19,12 @@ export default function Home() {
         <JobsSection/>
         <ContactsSection/>
         <Footer/>
-
       </>
     
-  )
-}
+    )
+  }
+  
+  
+  /*
+   
+*/

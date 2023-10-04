@@ -8,7 +8,7 @@ export default function Footer() {
     return(
         <footer className={style.container_footer} >
            <div className={style.left_div_footer}>
-                <Image src={Logo1} alt="" />
+                <Image src={Logo1} alt="Logo" priority/>
             </div> 
             <div className={style.right_div_footer}>
                 <div>

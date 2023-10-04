@@ -30,9 +30,12 @@
         
 
         img{
-            height: 16.5rem;
+            height: auto;
             width: 30rem;
             border-radius: 1rem;
+            object-fit: cover;
+            background-position: center;
+            
 
         }
 

@@ -54,10 +54,12 @@
 
         background: url('../../assets/images/homeMobile.jpeg');
         background-repeat: no-repeat;
-        background-position: center top;
+        background-position: center ;
         background-size: cover;
+        object-fit: cover;
 
     }
 
     
 }
+

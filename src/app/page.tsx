@@ -1,7 +1,30 @@
+"use client"
+
 import styles from './page.module.css'
+
+import Header from '@/components/Header'
+import FirstSection from '@/components/FirstSection'
+import About from '@/components/About'
+import JobsSection from "@/components/JobsSection";
+import ContactsSection from '@/components/ContactsSection'
+import Footer from '@/components/Footer'
+
 
 export default function Home() {
   return (
-    <h1>hello word!</h1>
-  )
-}
+      <>
+        <Header/>
+        <FirstSection/>
+        <About/>
+        <JobsSection/>
+        <ContactsSection/>
+        <Footer/>
+      </>
+    
+    )
+  }
+  
+  
+  /*
+   
+*/

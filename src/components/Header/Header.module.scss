@@ -14,11 +14,16 @@
 
     background-color: #0B2447;
 
-    img{
-      width: 20rem;  
-      height: auto;
-    }
+}
 
+.logo_desktop{
+    width: 20rem;  
+    height: auto;
+}
+
+.logo_mobile{
+    width: 7rem;  
+    height: auto;
 }
 
 .menuDesktop{
@@ -50,9 +55,7 @@
         padding: 0 1.6rem;
        justify-content: center;
 
-        img{
-            width: 7rem;  
-          }
+        
     }
 
     .menuDesktop{

@@ -39,9 +39,9 @@ export default function Header() {
         <header className={styles.header} >
             {
                 !isScreenSmall ? (
-                    <Image src={Logo1} alt="logo"/>
+                    <Image src={Logo1} alt="logo" className={styles.logo_desktop}/>
                 ):(
-                    <Image src={LogoMobile} alt="logo" priority/>
+                    <Image src={LogoMobile} alt="logo" className={styles.logo_mobile} priority/>
                 )
             }
 

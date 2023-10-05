@@ -24,7 +24,7 @@ export default function About() {
             <div>
                 <div>
                 <h1>Gabriel Henrique</h1>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed id ante a neque tincidunt vehicula non nec nulla. Nulla facilisi. Sed eget ultrices turpis. Cras vestibulum consequat lorem, non sollicitudin nulla tincidunt</p>
+                <p>Aos 16 anos conheci a fotografia e me apaixonei por ela completamente. Conhecendo o mundo pelas lentes aprendi que imagens falam muito mais que palavras e que imortalizam histórias, por isso escolhi a câmera como forma de tornar os momentos mais únicos e especiais.</p>
                 </div>
 
                 <a onClick={()=> scrollToSection('jobs')} >Meus trabalhos</a>

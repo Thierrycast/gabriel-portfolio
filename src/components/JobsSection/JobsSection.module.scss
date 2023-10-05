@@ -1,3 +1,5 @@
+@import '../../app/theme.scss';
+
 .Jobs_container{
     width: 100%;
     padding: 8rem;
@@ -6,10 +8,10 @@
     flex-direction: column;
     align-items: center;
 
-    background-color: #1E1E1E;
+    background-color: $background-color2;
 
     h1{
-        color: #e1be22;
+        color: $accent-color;
         font-size: 4rem;
         font-weight: 700;
         margin-bottom: 12rem;
@@ -43,20 +45,20 @@
     
     h2{
         text-transform: uppercase;
-        color: #fff;
+        color: $text-color;
         font-size: 1.6rem;
         font-weight: 400;
 
         span{
 
-            color: #e1be22;
+            color: $accent-color;
         }
     }
 
     .separator{
         width: 100%;
         height: 0.1rem;
-        background-color: #e1be22;
+        background-color: $accent-color;
     }
 }
 

@@ -1,9 +1,11 @@
+@import '../../app/theme.scss';
+
 .container_footer{
     display: flex;
     padding: 4rem;
 
 
-    background-color: #3F3F3F;
+    background-color: $background-color3;
    
     div{
         width: 50%; 
@@ -20,7 +22,7 @@
         height: auto;
     }
 
-    border-right: 1px solid #fff;
+    border-right: 1px solid $text-color;
 }
 
 .right_div_footer{
@@ -31,7 +33,7 @@
         align-items: normal;
         gap: 1rem;
 
-        color: #ffffff;
+        color: $text-color;
 
         font-size: 1.6rem;
         font-weight: 600;
@@ -63,6 +65,6 @@
         }
         
         border: none;
-        border-bottom: 1px solid #fff;
+        border-bottom: 1px solid $text-color;
     }
 }

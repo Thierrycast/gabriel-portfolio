@@ -1,3 +1,5 @@
+@import '../../app/theme.scss';
+
 .header{
     width: 100%;
     height: 9rem;
@@ -12,7 +14,7 @@
     justify-content: space-between;
     align-items: center;
 
-    background-color: #0B2447;
+    background-color: $primary-color;
 
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
 
@@ -38,11 +40,11 @@
 
     li{
         transition: 0.5s;
-        color: #fff;
+        color: $text-color;
 
         :hover{
             transition: 0.5s;
-            color: #E1BF23;
+            color: $accent-color;
         }
     }
 }
@@ -78,7 +80,7 @@
 }
 
 .buttonMenu{
-    color: #fff;
+    color: $text-color;
     width: 3rem;
     height: 3rem;
     cursor: pointer;

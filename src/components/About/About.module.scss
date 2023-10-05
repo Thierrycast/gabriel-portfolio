@@ -1,6 +1,8 @@
+@import '../../app/theme.scss';
+
 .about_container{
     width: 100%;
-    background-color: #B4B4B4;
+    background-color: $background-color1;
     padding: 7rem 0;
 }
 
@@ -9,7 +11,7 @@
     padding: 8rem;
     gap: 9rem;
 
-    background-color: #0B2447;
+    background-color: $primary-color;
     width: 100rem;
 
     border-bottom-right-radius: 1.6rem;
@@ -30,13 +32,13 @@
             gap: 1.3rem;
             flex-direction: column;
             h1{
-                color: #ffffff;
+                color: $text-color;
                 font-size: 4rem;
                 font-weight: 600;
             }
 
             p{
-                color: #ffffff;
+                color: $text-color;
                 font-size: 1.8rem;
                 font-weight: 200;
             }
@@ -49,12 +51,12 @@
             
             height: 5rem;
             width: 20rem;
-            background-color: #e1be22;
+            background-color: $accent-color;
             border: none;
             border-radius: 1rem;
             box-shadow: 0rem 0.4rem 0.4rem #00000040;
             
-            color: #000;
+            color: $second-text-color;
             font-size: 1.8rem;
             font-weight: 700;
 

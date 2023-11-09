@@ -1,3 +1,5 @@
+<img width=100% src="https://capsule-render.vercel.app/api?type=waving&color=6f20a1&height=120&section=header"/>
+
 # Portfólio Fotográfico
 
 Este é o repositório do projeto de um portfólio online desenvolvido para um fotógrafo. O objetivo deste projeto é exibir o trabalho do fotógrafo de maneira elegante e responsiva. Foi desenvolvido utilizando TypeScript, Next.js e estilização com módulos SCSS.

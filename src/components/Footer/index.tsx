@@ -17,6 +17,7 @@ export default function Footer() {
                     <p>Sardoá - MG</p>
                 </div>
             </div>
+            <p className={style.signature} >Created by Thierry Castro</p>
         </footer>
     )
 }

@@ -11,8 +11,6 @@ export default function ButtonMenu(props : SidebarProps) {
 
     const showSidebar = () => setIsOpen(!isOpen)
 
-    
-
     return(
        <>
             <input id="menu-hamburguer" type="checkbox" checked={isOpen} readOnly />

@@ -1,64 +1,33 @@
+"use client";
 
-import styles from './Header.module.scss'
-import ButtonMenu from './buttonMenu/index'
-import Sidebar from  '../Sidebar'
-import { useEffect, useState } from 'react';
-
-
+import { useState } from 'react';
+import styles from './Header.module.scss';
+import ButtonMenu from './buttonMenu/index';
+import Sidebar from '../Sidebar';
 import Image from 'next/image';
-import Logo1 from '@/assets/svgs/logo1.svg'
-import LogoMobile from '@/assets/svgs/logomobile.svg' 
-
+import Logo1 from '@/assets/svgs/logo1.svg';
+import LogoMobile from '@/assets/svgs/logomobile.svg';
+import scrollToSection from '@/utils/scrollToSection'; 
 
 export default function Header() {
-  const [isOpen, setIsOpen] = useState<boolean>(false)
-  const [isScreenSmall, setIsScreenSmall] = useState<boolean>(true)
+  const [isOpen, setIsOpen] = useState<boolean>(false);
 
-  useEffect(() => {
-    const mediaQuery = window.matchMedia('(max-width: 767px)');
-    setIsScreenSmall(mediaQuery.matches);
-    
-    
-    
-  }, []);
+  return (
+    <header className={styles.header}>
+      <Image src={Logo1} alt="logo" className={styles.logo_desktop} />
+      <Image src={LogoMobile} alt="logo" className={styles.logo_mobile} priority />
 
+      <ul className={styles.menuDesktop}>
+        <li><a onClick={() => scrollToSection('home')}>Início</a></li>
+        <li><a onClick={() => scrollToSection('about')}>Sobre</a></li>
+        <li><a onClick={() => scrollToSection('jobs')}>Trabalhos</a></li>
+        <li><a onClick={() => scrollToSection('contacts')}>Contatos</a></li>
+      </ul>
 
-  const scrollToSection = (sectionId : string) => {
-    const section = document.getElementById(sectionId);
-    if (section) {
-      const headerHeight = 90; 
-      const yOffset = section.getBoundingClientRect().top - headerHeight;
-
-      window.scrollBy({
-        top: yOffset,
-      });
-    }
-  };
-  
-    return(
-        <header className={styles.header} >
-            {
-                !isScreenSmall ? (
-                    <Image src={Logo1} alt="logo" className={styles.logo_desktop}/>
-                ):(
-                    <Image src={LogoMobile} alt="logo" className={styles.logo_mobile} priority/>
-                )
-            }
-
-            <ul className={styles.menuDesktop}>
-                <li><a onClick={()=> scrollToSection('home')}>Início</a></li>
-                <li><a onClick={()=> scrollToSection('about')}>Sobre</a></li>
-                <li><a onClick={()=> scrollToSection('jobs')}>Trabalhos</a></li>
-                <li><a onClick={()=> scrollToSection('contacts')}>Contatos</a></li>
-            </ul>
-
-           <div className={styles.menuMobile} >
-            <ButtonMenu isOpen={isOpen} setIsOpen={setIsOpen}/>
-            <Sidebar isOpen={isOpen} setIsOpen={setIsOpen} />
-           </div>
-            
-
-        </header>
-    )
+      <div className={styles.menuMobile}>
+        <ButtonMenu isOpen={isOpen} setIsOpen={setIsOpen} />
+        <Sidebar isOpen={isOpen} setIsOpen={setIsOpen} />
+      </div>
+    </header>
+  );
 }
-

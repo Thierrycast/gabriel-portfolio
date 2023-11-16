@@ -1,87 +1,82 @@
 @import '../../app/theme.scss';
 
-.header{
+.header {
     width: 100%;
     height: 9rem;
-
     padding: 0 6rem;
-
     position: fixed;
     top: 0;
     left: 0;
-
     display: flex;
     justify-content: space-between;
     align-items: center;
-
     background-color: $primary-color;
-
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
-    
     z-index: 3;
-
 }
 
-.logo_desktop{
-    width: 20rem;  
+.logo_desktop {
+    width: 20rem;
     height: auto;
 }
 
-.logo_mobile{
-    width: 7rem;  
+.logo_mobile {
+    display: none;
+    width: 7rem;
     height: auto;
 }
 
-.menuDesktop{
-
+.menuDesktop {
     display: flex;
     gap: 5rem;
     font-size: 1.6rem;
     font-weight: 700;
     list-style: none;
 
-    li{
+    li {
         transition: 0.5s;
         color: $text-color;
 
-        :hover{
+        :hover {
             transition: 0.5s;
             color: $accent-color;
         }
     }
 }
 
-.menuMobile{
+.menuMobile {
     display: none;
 }
 
 @media (max-width: 800px) {
-
-    .header{
+    .header {
         padding: 0 1.6rem;
-       justify-content: center;
-
-        
+        justify-content: center;
     }
 
-    .menuDesktop{
+    .menuDesktop {
         display: none;
     }
 
-    .menuMobile{
+    .menuMobile {
+        display: block;
+    }
+    .logo_desktop {
+        display: none;
+    }
+
+    .logo_mobile {
         display: block;
     }
 }
 
 @media (min-width: 1600px) {
-
-    .header{
+    .header {
         padding: 0 20%;
-        
     }
 }
 
-.buttonMenu{
+.buttonMenu {
     color: $text-color;
     width: 3rem;
     height: 3rem;

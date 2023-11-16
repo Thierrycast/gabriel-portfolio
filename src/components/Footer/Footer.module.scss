@@ -2,8 +2,10 @@
 
 .container_footer{
     display: flex;
-    padding: 4rem;
+    padding: 4rem ;
+    position: relative;
 
+    justify-content: center;
 
     background-color: $background-color3;
    
@@ -40,11 +42,21 @@
     }
 }
 
+.signature{
+    position: absolute;
+    bottom: 1rem;
+    right: 1rem;
+
+    font-size: 1rem;
+
+    color: #c0c0c0;
+}
+
 @media (max-width: 800px) {
 
     .container_footer{
         flex-direction: column;
-        padding: 6rem;
+        padding: 6rem 6rem 12rem;
 
         gap: 5rem;
 
@@ -66,5 +78,13 @@
         
         border: none;
         border-bottom: 1px solid $text-color;
+    }
+
+    .signature{
+        
+        bottom: 3rem;
+        right: 3rem;
+    
+        font-size: 0.8rem;
     }
 }

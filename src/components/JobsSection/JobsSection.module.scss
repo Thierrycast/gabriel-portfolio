@@ -1,16 +1,14 @@
 @import '../../app/theme.scss';
 
-.Jobs_container{
+.Jobs_container {
     width: 100%;
     padding: 8rem 0;
-
     display: flex;
     flex-direction: column;
     align-items: center;
-
     background-color: $background-color2;
 
-    h1{
+    h1 {
         color: $accent-color;
         font-size: 4rem;
         font-weight: 700;
@@ -18,8 +16,7 @@
     }
 }
 
-.Job_item{
-
+.Job_item {
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -27,80 +24,61 @@
     gap: 2rem;
     margin-bottom: 7rem;
 
-    .jobs_images_desktop{
-        //display: flex;
-        display: none;
+    .jobs_images_desktop {
+        display: flex;
         gap: 7rem;
-        
 
-        img{
+        img {
             height: auto;
             width: 30rem;
             border-radius: 1rem;
             object-fit: cover;
             background-position: center;
-            
-
         }
-
     }
-    
-    h2{
+
+    h2 {
         text-transform: uppercase;
         color: $text-color;
         font-size: 1.6rem;
         font-weight: 400;
 
-        span{
-
+        span {
             color: $accent-color;
         }
     }
 
-
-    .jobs_images_mobile{
-        //display: none;
-        width: 100%;
-            display: block;
-            
+    .jobs_images_mobile {
+        display: none;
     }
-
 }
 
-
-
-.separator{
+.separator {
     width: 80%;
     height: 0.1rem;
     background-color: $accent-color;
 }
 
 @media (max-width: 800px) {
-
-    .Jobs_container{
-
+    .Jobs_container {
         padding: 8rem 0rem;
 
-        h1{
+        h1 {
             font-size: 2.4rem;
             margin-bottom: 4rem;
         }
     }
 
-    .Job_item{
+    .Job_item {
         width: 100%;
 
-        
-        .jobs_images_desktop{
+        .jobs_images_desktop {
             display: none;
         }
 
-
-        .jobs_images_mobile{
+        .jobs_images_mobile {
             width: 100%;
             display: block;
-            
         }
     }
-
 }

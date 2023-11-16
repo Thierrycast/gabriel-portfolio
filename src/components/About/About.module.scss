@@ -19,7 +19,7 @@
 
     img{
         height: 32rem;  
-        border-radius: 1rem;
+        border-radius: 0.5rem;
     }
 
     div{
@@ -32,7 +32,7 @@
             gap: 1.3rem;
             flex-direction: column;
             h1{
-                color: $text-color;
+                color: #fff;
                 font-size: 4rem;
                 font-weight: 600;
             }
@@ -59,24 +59,22 @@
             color: $second-text-color;
             font-size: 1.8rem;
             font-weight: 700;
-
         }
     }
 }
 
 @media (max-width: 800px) {
     .about_container{
-        padding: 4rem;
+        padding: 5rem 2.5rem;
     }
 
     .about_wrap{
         width: 100%;
         flex-direction: column;
         align-items: center;
-        border-radius: 1.6rem;
+        border-radius: 0.8rem;
         gap: 1rem;
-
-        padding: 6rem 3rem;
+        padding: 6rem 2rem;
 
         img{
             width: 14rem;
@@ -86,18 +84,13 @@
         div{
             text-align: center;
             align-items: center;
-            gap: 10rem;
+            gap: 6rem;
 
             div{
+                gap: 2rem;
+                h1{ font-size: 2.2rem; }
 
-
-                h1{
-                    font-size: 2rem;
-                }
-
-                p{
-                    font-size: 1.4rem;
-                }
+                p{ font-size: 1.6rem; }
             }
 
             a{
@@ -109,7 +102,4 @@
     
 }
 
-@media (min-width: 1600px) {
-
-  
-}
+@media (min-width: 1600px) {}

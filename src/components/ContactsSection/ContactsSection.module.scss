@@ -2,8 +2,6 @@
 
 .contactsSection_Container{
     width: 100%;
-
-
     background-color: $background-color1;
 
     display: flex;
@@ -66,13 +64,9 @@
             gap: 3rem;
             margin-bottom: 3rem;
     
-            img{
-                width: 5rem;
-            }
+            img{ width: 5rem; }
         }
 
-        span{
-            font-size: 1.4rem;
-        }
+        span{ font-size: 1.4rem; }
     }
 }

@@ -2,7 +2,6 @@
 
 .home_container{
     width: 100vw;
-
     margin-top: 9rem;
    
     background: url('../../assets/images/home.jpeg');
@@ -10,29 +9,25 @@
     background-position: center top;
     background-size: cover;
 
-    padding: 10rem 0 14rem;
+    padding: 10rem 0 10rem;
     display: flex;
     align-items: center;
     justify-content: center;
-    
-    
 
     div{
         opacity: none;
         display: flex;
         align-items: center;
         flex-direction: column;
-    
-
+  
         p{
             color: $text-color;
-            
             font-size: 1.8rem;
             font-weight: 200;
             width: 35rem;
             text-align: center;
             margin-top: 2rem;
-            margin-bottom: 6rem;
+            margin-bottom: 10rem;
         }
 
         a{
@@ -41,9 +36,7 @@
             border-radius: 1rem;
             box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
             padding: 1.2rem 3.6rem;
-
-            color: $text-color;
-           
+            color: $text-color; 
             font-size: 1.6rem;
             font-weight: 400;
         }
@@ -53,15 +46,11 @@
 @media (max-width: 600px) {
 
     .home_container{
-
         background: url('../../assets/images/homeMobile.jpeg');
         background-repeat: no-repeat;
         background-position: center ;
         background-size: cover;
         object-fit: cover;
-
-    }
-
-    
+    }  
 }
 

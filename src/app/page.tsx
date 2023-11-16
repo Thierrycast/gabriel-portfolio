@@ -9,6 +9,8 @@ import JobsSection from "@/components/JobsSection";
 import ContactsSection from '@/components/ContactsSection'
 import Footer from '@/components/Footer'
 
+import Carousel from '@/components/Carrousel'
+
 
 export default function Home() {
   return (

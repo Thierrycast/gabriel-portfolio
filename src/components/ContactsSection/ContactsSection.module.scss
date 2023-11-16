@@ -1,8 +1,8 @@
+@import '../../app/theme.scss';
+
 .contactsSection_Container{
     width: 100%;
-
-
-    background-color: #B4B4B4;
+    background-color: $background-color1;
 
     display: flex;
     flex-direction: column;
@@ -10,7 +10,7 @@
     padding: 9rem;
 
     h1{
-        color: #0b2447;
+        color: $primary-color;
         font-size: 2.8rem;
         font-weight: 700;
         margin-bottom: 1.5rem;
@@ -19,7 +19,8 @@
     p{
         font-size: 2.2rem;
         font-weight: 400;
-    margin-bottom: 10rem;
+        margin-bottom: 10rem;
+        color: $second-text-color;
     }
  
     div{
@@ -39,6 +40,7 @@
         display: flex;
         align-items: center;
         gap: 0.5rem;
+        color: $second-text-color;
     }
 }
 
@@ -62,13 +64,9 @@
             gap: 3rem;
             margin-bottom: 3rem;
     
-            img{
-                width: 5rem;
-            }
+            img{ width: 5rem; }
         }
 
-        span{
-            font-size: 1.4rem;
-        }
+        span{ font-size: 1.4rem; }
     }
 }

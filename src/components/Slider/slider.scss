@@ -1,0 +1,21 @@
+@import '../../app/theme.scss';
+
+.swiper {
+  padding: 3rem;
+}
+
+.swiper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  img {
+    width: 100%;
+    height: auto;
+    border-radius: 3px;
+  }
+}
+
+.swiper-pagination-bullet-active {
+  background-color: $accent-color;
+}

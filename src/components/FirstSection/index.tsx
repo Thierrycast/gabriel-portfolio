@@ -12,8 +12,6 @@ export default function FirstSection() {
                 <p>Recordando momentos únicos através da fotografia</p>
                 <a href='#contacts' >entre em contato</a> 
             </div>
-        </div> 
-        
+        </div>     
     )
-
 }

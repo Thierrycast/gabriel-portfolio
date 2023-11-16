@@ -1,79 +1,83 @@
-.header{
+@import '../../app/theme.scss';
+
+.header {
     width: 100%;
     height: 9rem;
-
     padding: 0 6rem;
-
     position: fixed;
     top: 0;
     left: 0;
-
     display: flex;
     justify-content: space-between;
     align-items: center;
-
-    background-color: #0B2447;
-
-    img{
-      width: 20rem;  
-      height: auto;
-    }
-
+    background-color: $primary-color;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+    z-index: 3;
 }
 
-.menuDesktop{
+.logo_desktop {
+    width: 20rem;
+    height: auto;
+}
 
+.logo_mobile {
+    display: none;
+    width: 7rem;
+    height: auto;
+}
+
+.menuDesktop {
     display: flex;
     gap: 5rem;
     font-size: 1.6rem;
     font-weight: 700;
     list-style: none;
 
-    li{
+    li {
         transition: 0.5s;
-        color: #fff;
+        color: $text-color;
 
-        :hover{
+        :hover {
             transition: 0.5s;
-            color: #E1BF23;
+            color: $accent-color;
         }
     }
 }
 
-.menuMobile{
+.menuMobile {
     display: none;
 }
 
 @media (max-width: 800px) {
-
-    .header{
+    .header {
         padding: 0 1.6rem;
-       justify-content: center;
-
-        img{
-            width: 7rem;  
-          }
+        justify-content: center;
     }
 
-    .menuDesktop{
+    .menuDesktop {
         display: none;
     }
 
-    .menuMobile{
+    .menuMobile {
+        display: block;
+    }
+    .logo_desktop {
+        display: none;
+    }
+
+    .logo_mobile {
         display: block;
     }
 }
 
 @media (min-width: 1600px) {
-
-    .header{
+    .header {
         padding: 0 20%;
-        
     }
 }
 
-.buttonMenu{
-    color: #fff;
+.buttonMenu {
+    color: $text-color;
     width: 3rem;
     height: 3rem;
     cursor: pointer;

@@ -4,6 +4,12 @@
 
 Este é o repositório do projeto de um portfólio online desenvolvido para um fotógrafo. O objetivo deste projeto é exibir o trabalho do fotógrafo de maneira elegante e responsiva. Foi desenvolvido utilizando TypeScript, Next.js e estilização com módulos SCSS.
 
+<br/>
+Acesse o deploy desse projeto <a href='https://gabriel-portfolio-pi.vercel.app/' >aqui<a/>.
+
+<br/>
+<br/>
+
 ## Funcionalidades
 
 O portfólio conta com as seguintes seções:

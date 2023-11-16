@@ -14,8 +14,8 @@ export default function Header() {
 
   return (
     <header className={styles.header}>
-      <Image src={Logo1} alt="logo" className={styles.logo_desktop} />
-      <Image src={LogoMobile} alt="logo" className={styles.logo_mobile} priority />
+      <Image onClick={() => scrollToSection('home')} src={Logo1} alt="logo" className={styles.logo_desktop} />
+      <Image onClick={() => scrollToSection('home')} src={LogoMobile} alt="logo" className={styles.logo_mobile} priority />
 
       <ul className={styles.menuDesktop}>
         <li><a onClick={() => scrollToSection('home')}>Início</a></li>

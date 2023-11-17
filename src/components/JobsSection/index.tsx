@@ -44,15 +44,12 @@ export default function JobsSection() {
 
           <div className={style.jobs_images_mobile}>
             <Slider settings={settings}>
-              <Slide>
-                <Image src={job.images[0]} priority alt='' />
-              </Slide>
-              <Slide>
-                <Image src={job.images[1]} priority alt='' />
-              </Slide>
-              <Slide>
-                <Image src={job.images[2]} priority alt='' />
-              </Slide>
+
+              {job.images.map((image, index) =>(
+                <Slide key={index}>
+                  <Image src={image} priority alt='' />
+                </Slide>
+              ))}
             </Slider>
           </div>
 

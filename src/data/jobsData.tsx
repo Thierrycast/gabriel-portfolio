@@ -11,6 +11,7 @@ import batizado3 from '@/assets/jobsimages/batizado3.jpeg';
 import nubarba1 from '@/assets/jobsimages/nubarba1.jpeg';
 import nubarba2 from '@/assets/jobsimages/nubarba2.jpeg';
 import nubarba3 from '@/assets/jobsimages/nubarba3.jpeg';
+import nubarba4 from '@/assets/jobsimages/nubarba4.jpeg';
 
 import cavalo1 from '@/assets/jobsimages/cavalo1.jpeg';
 import cavalo2 from '@/assets/jobsimages/cavalo2.jpeg';
@@ -48,7 +49,7 @@ const jobs: Job[] = [
                 Ensaio profissional <span>barbearia</span>
             </>
         ),
-        images: [nubarba1, nubarba2, nubarba3],
+        images: [nubarba1, nubarba2, nubarba3, nubarba4],
     },
     {
         id: 4,
